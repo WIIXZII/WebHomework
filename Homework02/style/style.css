@@ -1,50 +1,121 @@
-/* Responsive Layout & Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Khmer OS", sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
 }
-
-header {
-  background-color: #0d6efd;
-  color: white;
-  padding: 1em 0;
-  text-align: center;
-}
-
-nav {
-  margin-top: 0.5em;
-}
-
-nav a {
-  color: white;
-  margin: 0 1em;
-  text-decoration: none;
-}
-
 main {
-  padding: 2em;
+  background-color: #eaf4e4;
+  width: 80%;
+  height: 600px;
+  margin-left: 10%;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 65px;
+  margin-right: 65px;
+}
+span {
+  margin-top: 10px;
+}
+.body {
+  background-color: #ffffff;
+  width: 90%;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.calendar-container {
+  width: 97%;
+  height: 470px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-left: 17px;
+  margin-top: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead th {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: top;
+  padding: 10px;
+  height: 30px;
+  font-size: 0.7rem;
+}
+img {
+  margin-left: 10%;
+  width: 10px;
+  height: 10px;
+}
+
+.gray {
+  background-color: #f2f2f2;
+  color: gray;
+}
+
+td.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+
+.event-box {
+  border-left: 4px solid blue;
+  padding-left: 10px;
+  margin: 10px 0;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.event-box.red {
+  border-color: red;
+}
+
+aside {
+  padding-left: 20px;
+  padding-right: 3px;
+  max-width: 300px;
 }
 
 footer {
-  background-color: #222;
-  color: #fff;
   text-align: center;
-  padding: 1em 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  font-size: 0.9rem;
+  color: #555;
 }
-
-/* Responsive design */
-@media (max-width: 600px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  nav a {
-    margin: 0.5em 0;
-  }
+b {
+  font-size: 1.2rem;
 }
