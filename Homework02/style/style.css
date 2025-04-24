@@ -74,6 +74,11 @@ td {
   height: 30px;
   font-size: 0.7rem;
 }
+td:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 img {
   margin-left: 10%;
   width: 10px;
