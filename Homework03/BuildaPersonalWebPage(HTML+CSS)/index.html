@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eLibrary - Your Digital Reading Platform</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+      <p>New book upload by Google</p>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>eLibrary</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Book</a></li>
+            <li><a href="#">Authors</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">My Books</a></li>
+          </ul>
+        </nav>
+        <div class="auth-buttons">
+          <button class="login-btn">Login</button>
+          <button class="register-btn">Register</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>
+            Download your favorite <span class="accent">books unlimited</span>
+          </h1>
+          <p>
+            Access thousands of books from various genres and authors. Start
+            your reading journey today!
+          </p>
+          <button class="explore-btn">Explore more</button>
+        </div>
+        <div class="hero-image">
+          <img src="images/icons/book-hero.png" alt="Books and Computer" />
+        </div>
+      </div>
+      <div class="wave">
+        <svg viewBox="0 0 1440 110">
+          <path
+            fill="#000"
+            fill-opacity="1"
+            d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">What We Provided</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-download"></i>
+            <h3>Download Books</h3>
+            <p>Access and download your favorite books anytime, anywhere.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-upload"></i>
+            <h3>Upload Books</h3>
+            <p>Share your own books with the community.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-share-alt"></i>
+            <h3>Share</h3>
+            <p>Share books with friends and family.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-heart"></i>
+            <h3>Add to favorite</h3>
+            <p>Save your favorite books for later reading.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Books Section -->
+    <section class="popular-books">
+      <div class="container">
+        <h2 class="section-title">Popular Books</h2>
+        <div class="books-grid">
+          <div class="book-card">
+            <img src="images/bookImages/b1 (1).webp" alt="Book 1" />
+            <div class="book-info">
+              <span class="views">1.2k views</span>
+              <span class="rating">4.5 ★</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <img src="images/bookImages/b2 (1).webp" alt="Book 2" />
+            <div class="book-info">
+              <span class="views">2.1k views</span>
+              <span class="rating">4.8 ★</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <img src="images/book3.jpg" alt="Book 3" />
+            <div class="book-info">
+              <span class="views">1.8k views</span>
+              <span class="rating">4.3 ★</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <img src="images/book4.jpg" alt="Book 4" />
+            <div class="book-info">
+              <span class="views">1.5k views</span>
+              <span class="rating">4.6 ★</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <img src="images/book5.jpg" alt="Book 5" />
+            <div class="book-info">
+              <span class="views">2.3k views</span>
+              <span class="rating">4.9 ★</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote">
+      <div class="container">
+        <div class="quote-content">
+          <p>
+            "Open a book, unlock your mind; in every page a new adventure you'll
+            find."
+          </p>
+        </div>
+        <div class="quote-image">
+          <img src="images/stacked-books.png" alt="Stacked Books" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources Provider Section -->
+    <section class="resources">
+      <div class="container">
+        <h2 class="section-title">Resources Provider</h2>
+        <div class="providers-grid">
+          <img src="images/microsoft.png" alt="Microsoft" />
+          <img src="images/coursera.png" alt="Coursera" />
+          <img src="images/meta.png" alt="Meta" />
+          <img src="images/google.png" alt="Google" />
+          <img src="images/udemy.png" alt="Udemy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Request Book Form -->
+    <section class="request-form">
+      <div class="container">
+        <div class="form-content">
+          <h2>Request a Book</h2>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="text" placeholder="Book Title" required />
+            <textarea placeholder="Additional Information"></textarea>
+            <button type="submit">Send Request</button>
+          </form>
+        </div>
+        <div class="form-image">
+          <img src="images/icons/robot.png" alt="Robot Illustration" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>eLibrary</h2>
+          </div>
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h3>About</h3>
+              <p>
+                eLibrary is your digital reading platform, providing access to
+                thousands of books from various genres and authors.
+              </p>
+            </div>
+            <div class="footer-column">
+              <h3>Site Maps</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Authors</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Features</h3>
+              <ul>
+                <li><a href="#">Download Books</a></li>
+                <li><a href="#">Upload Books</a></li>
+                <li><a href="#">Share</a></li>
+                <li><a href="#">Favorites</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2024 eLibrary. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
