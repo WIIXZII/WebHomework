@@ -6,8 +6,8 @@
 }
 
 :root {
-  --primary-color: #6b46c1;
-  --secondary-color: #ed8936;
+  --primary-color: #582bc2;
+  --secondary-color: #ff7300;
   --text-color: #2d3748;
   --light-text: #718096;
   --white: #ffffff;
@@ -192,7 +192,7 @@ nav a {
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: 50px;
 }
 
 .feature-card {
@@ -220,7 +220,7 @@ nav a {
 
 /* Popular Books Section */
 .popular-books {
-  padding: 80px 0;
+  padding: 80px 0px;
   background-color: var(--black);
 }
 
@@ -228,32 +228,60 @@ nav a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+  align-items: center;
+  justify-items: center;
 }
 
-.book-card {
-  background-color: var(--white);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+.card {
+  width: 225px;
+  height: 370px;
+  /* background-image: url("/images/bookImages/b1.webp"); */
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  position: relative;
 }
 
-.book-card:hover {
-  transform: translateY(-5px);
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  border-radius: 0 0 16px 16px;
 }
 
-.book-card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.book-info {
-  padding: 15px;
+.card-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  z-index: 1;
   font-size: 14px;
-  background-color: #f7fafc;
+  background-color: rgba(0, 0, 0, 0.319);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.icon-group i {
+  margin-right: 4px;
 }
 
 /* Quote Section */
@@ -261,6 +289,11 @@ nav a {
   padding: 80px 0;
   text-align: center;
   background-color: #f7fafc;
+}
+.quote .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .quote-content {
@@ -270,9 +303,21 @@ nav a {
 
 .quote-content p {
   font-size: 24px;
-  font-style: italic;
+  /* font-style: italic; */
   color: var(--primary-color);
   line-height: 1.4;
+}
+.quote-p1 {
+  font-size: 50px;
+  color: var(--secondary-color);
+  margin-top: 20px;
+  font-weight: 700;
+}
+.quote-p2 {
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-top: 20px;
+  font-weight: 700;
 }
 
 .quote-image {
@@ -298,15 +343,16 @@ nav a {
 }
 
 .providers-grid img {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
-  filter: grayscale(100%);
-  transition: filter 0.3s;
+  cursor: pointer;
+  /* filter: grayscale(100%); */
+  /* transition: filter 0.3s; */
 }
 
-.providers-grid img:hover {
+/* .providers-grid img:hover {
   filter: grayscale(0%);
-}
+} */
 
 /* Request Form Section */
 .request-form {
@@ -315,22 +361,26 @@ nav a {
 }
 
 .request-form .container {
-  display: flex;
-  gap: 40px;
-  align-items: center;
+  border: 1px solid var(--primary-color);
 }
 
 .form-content {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 40px;
 }
 
-.form-content h2 {
+.request-form h2 {
   margin-bottom: 30px;
   color: var(--primary-color);
   font-size: 32px;
+  text-align: center;
 }
 
 .form-content form {
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -342,10 +392,11 @@ textarea {
 
 .form-content input,
 .form-content textarea {
-  padding: 12px;
-  border: 1px solid #e2e8f0;
+  padding: 14.5px;
+  border: 1px solid var(--secondary-color);
   border-radius: 5px;
   font-size: 16px;
+  width: 400px;
   transition: border-color 0.3s;
 }
 
@@ -436,7 +487,7 @@ footer {
 .social-icons {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: left;
 }
 
 .social-icons a {
