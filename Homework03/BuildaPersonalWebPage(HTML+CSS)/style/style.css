@@ -6,8 +6,8 @@
 }
 
 :root {
-  --primary-color: #582bc2;
-  --secondary-color: #ff7300;
+  --primary-color: #6e11b0;
+  --secondary-color: #ff6900;
   --text-color: #2d3748;
   --light-text: #718096;
   --white: #ffffff;
@@ -33,6 +33,17 @@ body {
   text-align: center;
   padding: 10px;
   font-size: 14px;
+}
+.notification-bar a {
+  color: var(--primary-color);
+  text-decoration: none;
+  /* font-weight: bold; */
+}
+.notification-bar svg {
+  color: var(--primary-color);
+}
+.Eli {
+  color: var(--black);
 }
 
 /* Header */
@@ -396,6 +407,7 @@ textarea {
   border: 1px solid var(--secondary-color);
   border-radius: 5px;
   font-size: 16px;
+  color: var(--white);
   width: 400px;
   transition: border-color 0.3s;
 }
